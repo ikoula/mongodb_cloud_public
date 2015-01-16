@@ -1,0 +1,13 @@
+{
+  "name": "mongodb",
+  "mongodb": {
+
+     "bind_ip": "127.0.0.1"
+
+  },
+  "run_list": [
+    "recipe[apt::default]",
+    "recipe[mongodb::default]"
+
+  ]
+}

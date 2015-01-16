@@ -1,0 +1,5 @@
+#!/bin/bash
+knife cs keypair create mongodb > mongodb.key.tmp
+tail -n+3 mongodb.key.tmp > mongodb.key
+chmod 600 mongodb.key
+rm -f mongodb.key.tmp
